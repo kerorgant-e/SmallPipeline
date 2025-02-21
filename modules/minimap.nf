@@ -15,7 +15,7 @@ process MINIMAP {
         script: 
 
         """
-        minimap2 \
+        minimap2 \ 
             -a $ref $fastq \
             > alignement_${fastq.name}.sam
         """
